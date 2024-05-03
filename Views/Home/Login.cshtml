@@ -1,0 +1,59 @@
+﻿@{
+    ViewData["Title"] = "Login";
+}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>@ViewData["Title"]</title>
+    <!-- Include CSS for styling -->
+    <link rel="stylesheet" href="path/to/your/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="login-form">
+            <h1>Login</h1>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" class="form-control">
+                </div>
+                <button type="submit" class="btn btn-primary">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Include JavaScript if needed -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#loginForm').submit(function (event) {
+                event.preventDefault();
+                $.ajax({
+                    url: '@Url.Action("Login", "Account")', // Replace with your actual controller and action names
+                    type: 'POST',
+                    data: $(this).serialize(),
+                    success: function (response) {
+                        alert(response.message);
+                        if (response.success) {
+                            // Redirect to dashboard or home page if login is successful
+                            window.location.href = '@Url.Action("Dashboard", "Account")'; // Replace with your actual URL
+                        }
+                    },
+                    error: function (xhr, status, error) {
+                        var errorMessage = xhr.responseText;
+                        alert('Error occurred while processing your request: ' + errorMessage);
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
