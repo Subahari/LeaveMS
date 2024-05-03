@@ -23,7 +23,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
+                    <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
@@ -41,6 +41,11 @@
                                     asp-action="Login">Login</a>
                             </li>
                         </ul>
+                        <div class="ml-auto"> <!-- This div will align its contents to the right -->
+                            <li class="nav-item" id="logoutLink">
+                                <a href="@Url.Action("Login", "Home")" class="nav-link text-dark">Logout</a>
+                            </li>
+                        </div>
 
                     </ul>
                 </div>
@@ -63,5 +68,43 @@
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
+<script>
+    // Check if the current URL matches the target URL
+
+
+    var currentUrl = window.location.href;
+    var hideLogout = false;
+
+    // List of URLs to hide the logout link
+    var urlsToHide = [
+        '@Url.Action("Index", "Home")',
+        '@Url.Action("Register", "Home")',
+        '@Url.Action("Login", "Home")',
+        '@Url.Action("Privacy", "Home")'
+    ];
+
+    // Check if the current URL matches any of the URLs to hide
+    urlsToHide.forEach(function (url) {
+        if (currentUrl.indexOf(url) > -1) {
+            hideLogout = true;
+        }
+    });
+
+    // Hide or show the logout link based on the result
+    if (hideLogout) {
+        document.getElementById('logoutLink').style.display = 'none';
+    } else {
+        document.getElementById('logoutLink').style.display = 'block';
+    }
+
+    if (window.location.href.indexOf('@Url.Action("Dashboard", "Account")') > -1) {
+        // If it matches, display the logout link
+        document.getElementById('logoutLink').style.display = 'block';
+    } else {
+        // If the condition is false, hide the logout link
+        document.getElementById('logoutLink').style.display = 'none';
+    }
+
+</script>
 
 </html>
