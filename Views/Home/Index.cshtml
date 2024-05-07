@@ -2,7 +2,40 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<!DOCTYPE html>
+<html>
+    <head>
+  <title>@ViewData["Title"]</title>
+  <!-- Include CSS for styling -->
+  <link rel="stylesheet" href="~/css/site.css">
+  <style>
+    body,
+    html {
+      height: 100%;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    
+
+    .bg-img {
+      /* The image used */
+    @*//background-image:url("~/image/lab-technician.png");*@background-color: #1cd7e8;
+
+    @*min-height:380px;*@
+      /* Center and scale the image nicely */
+    @*background-position:center;background-repeat:no-repeat;background-size:cover;position:relative;*@
+    }
+
+    /* Add styles to the form container */
+    
+  </style>
+</head>
+
+<body class="bg-img">
+    <div class="text-center">
+        <h1 class="display-4">Welcome</h1>
+        <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    </div>
+</body>
+
+</html>

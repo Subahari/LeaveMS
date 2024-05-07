@@ -20,3 +20,19 @@ html {
 body {
   margin-bottom: 60px;
 }
+ 
+.container {
+      position: absolute;
+      right: 0;
+      margin: 20px;
+      max-width: 300px;
+      padding: 16px;
+      background-color: white;
+    }
+
+    .bg-img {
+      /* The image used */
+    background-color: #1cd7e8;
+
+
+    }

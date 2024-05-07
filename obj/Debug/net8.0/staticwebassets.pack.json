@@ -9,12 +9,16 @@
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
+      "Id": "C:\\Users\\subhary.k\\Documents\\NET\\LeaveMS\\wwwroot\\drop_icon-icons.com_54400.png",
+      "PackagePath": "staticwebassets\\drop_icon-icons.com_54400.png"
+    },
+    {
       "Id": "C:\\Users\\subhary.k\\Documents\\NET\\LeaveMS\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\Users\\subhary.k\\Documents\\NET\\LeaveMS\\wwwroot\\images\\lab-technician.png",
-      "PackagePath": "staticwebassets\\images\\lab-technician.png"
+      "Id": "C:\\Users\\subhary.k\\Documents\\NET\\LeaveMS\\wwwroot\\image\\lab-technician.png",
+      "PackagePath": "staticwebassets\\image\\lab-technician.png"
     },
     {
       "Id": "C:\\Users\\subhary.k\\Documents\\NET\\LeaveMS\\wwwroot\\js\\site.js",

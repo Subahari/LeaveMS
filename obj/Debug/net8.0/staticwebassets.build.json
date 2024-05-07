@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "3dDNrUID2iq2BModSxu1oQzfgkBKIGdEYV5EA3+tY1I=",
+  "Hash": "uuKT+yGYQEWjkst2cbnyNIxvuvvYWmX8xsWarJny4lA=",
   "Source": "LeaveMS",
   "BasePath": "_content/LeaveMS",
   "Mode": "Default",
@@ -74,6 +74,25 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
+      "Identity": "C:\\Users\\subhary.k\\Documents\\NET\\LeaveMS\\wwwroot\\drop_icon-icons.com_54400.png",
+      "SourceId": "LeaveMS",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\subhary.k\\Documents\\NET\\LeaveMS\\wwwroot\\",
+      "BasePath": "_content/LeaveMS",
+      "RelativePath": "drop_icon-icons.com_54400.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\drop_icon-icons.com_54400.png"
+    },
+    {
       "Identity": "C:\\Users\\subhary.k\\Documents\\NET\\LeaveMS\\wwwroot\\favicon.ico",
       "SourceId": "LeaveMS",
       "SourceType": "Discovered",
@@ -93,12 +112,12 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\subhary.k\\Documents\\NET\\LeaveMS\\wwwroot\\images\\lab-technician.png",
+      "Identity": "C:\\Users\\subhary.k\\Documents\\NET\\LeaveMS\\wwwroot\\image\\lab-technician.png",
       "SourceId": "LeaveMS",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\subhary.k\\Documents\\NET\\LeaveMS\\wwwroot\\",
       "BasePath": "_content/LeaveMS",
-      "RelativePath": "images/lab-technician.png",
+      "RelativePath": "image/lab-technician.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -109,7 +128,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\lab-technician.png"
+      "OriginalItemSpec": "wwwroot\\image\\lab-technician.png"
     },
     {
       "Identity": "C:\\Users\\subhary.k\\Documents\\NET\\LeaveMS\\wwwroot\\js\\site.js",

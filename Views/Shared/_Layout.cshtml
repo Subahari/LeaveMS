@@ -8,12 +8,30 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/LeaveMS.styles.css" asp-append-version="true" />
-    <link rel="icon" href="/image/lab-technician.png" type="image/png" />
+    @* <img src="~/image/lab-technician.png" alt="Lab Technician"> *@
+    <style>
+        body {
+            /* Set background image */
+            background-image: url("~/image/lab-technician.png");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            height: auto;
+        @*background-image:url(..\..\wwwroot\image\lab-technician.png);*@
+            /* Specify background image properties */
+        @*background-repeat:no-repeat;*@
+            /* Prevent image from repeating */
+        @*background-size:cover;*@
+            /* Cover the entire background */
+            /* Optionally, you can set other properties like background-position */
+        }
+    </style>
 
 
 </head>
 
-<body>
+<body style="background-image: url('~/image/lab-technician.png');">
+
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container-fluid">
